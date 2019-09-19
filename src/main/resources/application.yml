@@ -1,0 +1,19 @@
+server:
+  port: 8082
+
+
+#person:
+#    lastName: caspar
+#    age: 18
+#    birth: 2013/12/09
+#    maps: {k1: v1, k2: v2}
+#    list:
+#      - tomcat
+#      - netty
+#      - nginx
+#      - redis
+#      - f5
+#    dog:
+#      name: 小狗
+#      age: 2
+
