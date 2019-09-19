@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 
 @Component
+//PropertySource 加载指定配置文件
 @PropertySource(value = {"classpath:order.properties"})
 @ConfigurationProperties(prefix = "order")
 public class Order
