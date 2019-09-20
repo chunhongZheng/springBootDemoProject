@@ -1,31 +1,7 @@
 ##多profiles文档块模式
+#端口，项目上下文根
 server:
-  port: 8082
-spring:
-  profiles: 
-    active: local
----
-server:
-  port:8083
-spring:
-  profiles: dev
----
-server:
-  port:8084
-spring:
-  profiles: prod
-#person:
-#    lastName: caspar
-#    age: 18
-#    birth: 2013/12/09
-#    maps: {k1: v1, k2: v2}
-#    list:
-#      - tomcat
-#      - netty
-#      - nginx
-#      - redis
-#      - f5
-#    dog:
-#      name: 小狗
-#      age: 2
+  port: 8080
+  servlet:
+    context-path: /demo
 
