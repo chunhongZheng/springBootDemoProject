@@ -1,7 +1,19 @@
+##多profiles文档块模式
 server:
   port: 8082
-
-
+spring:
+  profiles: 
+    active: local
+---
+server:
+  port:8083
+spring:
+  profiles: dev
+---
+server:
+  port:8084
+spring:
+  profiles: prod
 #person:
 #    lastName: caspar
 #    age: 18
