@@ -1,0 +1,16 @@
+
+SpringBoot配置文件的加载位置
+
+SpringBoot启动会扫描以下位置的application.yml或者 application.properties文件作为SpringBoot的默认配置文件。
+
+-file:./config/
+
+-file:./
+
+-classpath:/config/
+
+-classpath:/
+
+即根目录下的config目录下，然后是 根目录下，然后是classpath路径下的config目录下，最后是classpath路径下。
+
+优先级由高到低，高优先级的配置会覆盖低优先级的配置
