@@ -2,23 +2,30 @@
 # 默认的profile为dev，其他环境通过指定启动参数使用不同的profile，比如：
 #   测试环境：java -jar xxx.jar --spring.profiles.active=test
 #   生产环境：java -jar xxx.jar --spring.profiles.active=prod
-server:
-  port: 8082
-#  servlet:
-#    context-path: /hotel
-spring:
-  profiles:
-    active: local
----
-server:
-  port: 8083
-spring:
-  profiles: dev
----
-server:
-  port: 8084
-spring:
-  profiles: prod
+#server:
+#  port: 8082
+##  servlet:
+##    context-path: /hotel
+#logging:
+#  file: D:\springBoot\log\springboot.log
+#  level:
+#    com:
+#      example: debug
+#    root: info
+#spring:
+#  profiles:
+#    active: local
+#
+#---
+#server:
+#  port: 8083
+#spring:
+#  profiles: dev
+#---
+#server:
+#  port: 8084
+#spring:
+#  profiles: prod
 
 
 

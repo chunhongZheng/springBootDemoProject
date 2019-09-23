@@ -1,7 +1,11 @@
 ##多profiles文档块模式
 #端口，项目上下文根
-server:
-  port: 8080
-  servlet:
-    context-path: /demo
+#server:
+#  port: 8080
+#  servlet:
+#    context-path: /demo
+
+
+
+
 
