@@ -31,6 +31,10 @@ webjar; 以jar包的方式引入资源
 
 
 
+使用Thymeleaf视图构建MVC Web应用程序的入门者
+把.html文件放至在classpath:/templates/ ,Thymeleaf就会进行自动渲染了
+比如访问http://localhost:8081/leaf/testThymeleaf，控制器返回success,则会去classpath:/templates/ 找对应的success.html文件
+
 
 
 
