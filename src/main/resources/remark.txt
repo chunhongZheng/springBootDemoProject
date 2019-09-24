@@ -14,3 +14,24 @@ SpringBoot启动会扫描以下位置的application.yml或者 application.proper
 即根目录下的config目录下，然后是 根目录下，然后是classpath路径下的config目录下，最后是classpath路径下。
 
 优先级由高到低，高优先级的配置会覆盖低优先级的配置
+
+
+
+
+静态文件默认存放路径："classpath:/META-INF/resources/","classpath:/resources/", "classpath:/static/", "classpath:/public/"
+classpath:/META-INF/resources/webjars/
+
+webjar; 以jar包的方式引入资源
+访问jquery资源 http://localhost:8081/webjars/jquery/3.4.1/jquery.js
+
+访问 D:static/testStatic.html目录路径为：http://localhost:8081/testStatic.html
+
+访问public/testPublic.html目录路径为http://localhost:8081/testPublic.html
+
+
+
+
+
+
+
+
