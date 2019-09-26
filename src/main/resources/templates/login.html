@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页</title>
+</head>
+<body>
+   <p id="userName" name="userName" placeholder="userName" th:text="#{login.userName}" ></p>
+   <p id="password" name="password" placeholder="password" th:text="#{login.password}"></p>
+
+
+   <input type="button" value="中文"  th:href="@{/index.html(l='zh_CN')}" ></input>
+   <input type="button" value="英文" th:href="@{/index.html(l='en_US')}"></input>
+
+    <a th:href="@{/index.html(l='zh_CN')}" >中文</a>
+    <a th:href="@{/index.html(l='en_US')}">英文</a>
+</body>
+</html>

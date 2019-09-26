@@ -13,4 +13,10 @@ public class ThymeleafTestController {
         map.put("hello","您好");
         return "success";
     }
+//    @RequestMapping("/index")
+//    public String login(){
+//        return "login";
+//    }
+
+
 }

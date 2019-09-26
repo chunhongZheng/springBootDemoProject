@@ -35,6 +35,14 @@ webjar; 以jar包的方式引入资源
 把.html文件放至在classpath:/templates/ ,Thymeleaf就会进行自动渲染了
 比如访问http://localhost:8081/leaf/testThymeleaf，控制器返回success,则会去classpath:/templates/ 找对应的success.html文件
 
+thymeleaf简单表达式
+变量表达式:${..}
+选择变量表达式: \*{...}
+消息表达式: #{..}
+链接网址表达式: @{...}
+片段表达式: ~{...}
+
+
 如果您想完全控制Spring MVC，可以添加自己的@Configuration注释@EnableWebMvc
 
 
