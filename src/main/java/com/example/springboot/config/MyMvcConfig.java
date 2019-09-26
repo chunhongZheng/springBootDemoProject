@@ -13,7 +13,7 @@ public class MyMvcConfig  implements WebMvcConfigurer {
     public void addViewControllers(ViewControllerRegistry registry) {
         //浏览器发送leaf请求来到success
         registry.addViewController("/leaf").setViewName("success");
-        registry.addViewController("/index.html").setViewName("login");
+        registry.addViewController("/index.html").setViewName("index");
     }
     @Bean
     public LocaleResolver localeResolver(){
