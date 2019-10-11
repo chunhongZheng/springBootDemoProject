@@ -30,19 +30,16 @@
                 </exclusion>
             </exclusions>-->
         </dependency>
-       <!--
-        &lt;!&ndash;添加jetty服务器&ndash;&gt;
+<!--        &lt;!&ndash;添加jetty服务器&ndash;&gt;
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jetty</artifactId>
-        </dependency>
-        &lt;!&ndash;添加undertow服务器&ndash;&gt;
+        </dependency>-->
+<!--        &lt;!&ndash;添加undertow服务器&ndash;&gt;
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-undertow</artifactId>
-        </dependency>
--->
-
+        </dependency>-->
         <!--引入Thymeleaf 模板引擎解析-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -50,42 +50,4 @@ public class MyServerConfig {
         registrationBean.setListener(new MyListener());
         return registrationBean;
     }
-
-/*
-
-   *//***
-    * 配置tomcat
-    * *//*
-   @Bean
-   public TomcatServletWebServerFactory setTomcat(){
-       TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory();
-       tomcat.setContextPath("/test"); // 设置项目访问路径
-       tomcat.setPort(8090); // 设置项目端口号
-       return tomcat;
-   }
-
-    *//**
-     * 配置嵌入式的servlet容器--Jetty
-     * @return
-     *//*
-    @Bean
-    public JettyServletWebServerFactory setJetty(){
-        JettyServletWebServerFactory jetty = new JettyServletWebServerFactory();
-        jetty.setContextPath("/test"); // 设置项目访问路径
-        jetty.setPort(8091); // 设置项目端口号
-        return jetty;
-    }
-
-    *//**
-     * 配置嵌入式的servlet容器--Undertow
-     * @return
-     *//*
-    @Bean
-    public UndertowServletWebServerFactory setUndertow(){
-        UndertowServletWebServerFactory undertow = new UndertowServletWebServerFactory();
-        undertow.setContextPath("/test"); // 设置项目访问路径
-        undertow.setPort(8092); // 设置项目端口号
-        return undertow;
-    }
-    */
 }
