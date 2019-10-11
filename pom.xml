@@ -22,7 +22,27 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <!-- 切换其它Servlet容器，这里先排除tomcat(因为SpringBoot默认是tomcat)，再引用其它的Servlet容器 -->
+<!--            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>-->
         </dependency>
+       <!--
+        &lt;!&ndash;添加jetty服务器&ndash;&gt;
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jetty</artifactId>
+        </dependency>
+        &lt;!&ndash;添加undertow服务器&ndash;&gt;
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-undertow</artifactId>
+        </dependency>
+-->
+
         <!--引入Thymeleaf 模板引擎解析-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

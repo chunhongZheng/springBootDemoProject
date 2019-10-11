@@ -52,6 +52,8 @@ thymeleaf简单表达式
 
 
 
+Jetty（适合开发长链接的应用：比如说聊天点对点，tomcat 就不合适）
 
+Undertow(不支持jsp，但它是高性能的，非阻塞的servlet容器，并发性能特别好)
 
 
