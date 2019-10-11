@@ -57,3 +57,17 @@ Jetty（适合开发长链接的应用：比如说聊天点对点，tomcat 就�
 Undertow(不支持jsp，但它是高性能的，非阻塞的servlet容器，并发性能特别好)
 
 
+https://www.jianshu.com/p/017a7f40efff
+
+EmbeddedWebServerFactoryCustomizerAutoConfiguration 嵌入式web服务工厂定制器自动配置类
+根据导入的依赖信息，该配置类会自动创建相应类型的容器工厂定制器（目前Spring Boot 2.x 版本支持tomcat、jetty、undertow、netty），
+以tomcat为例，这里会创建TomcatWebServerFactoryCustomizer组件
+
+TomcatServletWebServerFactoryCustomizer  tomcat配置定制器
+TomcatWebServerFactoryCustomizer
+
+
+下面的处理涉及到一个非常重要的类-->WebServerFactoryCustomizerBeanPostProcessor（web服务工厂定制器组件的后置处理器），
+该类负责在bean组件初始化之前执行初始化工作,获取到所有的定制器后，后置处理器调用定制器的customize()方法来给嵌入式的Servlet容器进行配置（默认或者自定义的配置）：
+
+
